@@ -265,8 +265,8 @@
   }
 
   async function MostrarDatos(pokemon) {
-    let p = document.getElementById('main-info');
-    p.removeAttribute("hidden");
+    let mainInfo = document.getElementById('main-info');
+    mainInfo.removeAttribute("hidden");
     document.getElementById("pokemon-name").innerHTML = pokemon.name.toUpperCase();
     document.getElementById("pokemon-id").innerHTML = `#${pokemon.id}`;
     document.getElementById("weight").innerHTML = pokemon.weight;
